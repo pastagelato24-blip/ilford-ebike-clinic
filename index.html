@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <title>Ilford E-Bike Clinic</title>
+
+    <!-- Tailwind via CDN (Play) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- smooth scrolling e piccoli tweak -->
+    <style>
+      html { scroll-behavior: smooth; }
+      /* supporto notch su mobile */
+      body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+    </style>
+
+    <!-- Meta basic -->
+    <meta name="description" content="Riparazioni e-bikes, e-scooters e ciclomotori elettrici. Ilford E-Bike Clinic." />
+    <meta name="theme-color" content="#0ea5e9"/>
   </head>
-  <body style="margin:0;padding:0;">
+  <body class="bg-slate-50 text-slate-800">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
